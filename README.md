@@ -3,7 +3,19 @@ Amplify fullstack application for reminder app
 
 # Steps:
 1. Create an github repository with ReadMe.md file
-2. Clone the project to local
+2. Clone the project to local. (Install AWS CLI and Amplify CLI if not installed, make sure Node is installed)
+Install AWS CLI on Linux:
+ - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+ - unzip awscliv2.zip
+ - sudo ./aws/install
+ - aws -version
+
+Install Amplify CLI:
+ - npm install -g @aws-amplify/cli
+
+Configure IAM AccessKeys:
+ - aws configure (Give accesskey, secret-access-key, region, outputformat)
+
 3. Run "amplify init" to create a new Amplify project (with given project-name) in AWS Cloud with dev envioronment by default. This doesn't create frontend scaffold.
 4. Create vite (React project, no need to delete existed /src and files in it)
 "npm create vite@latest . -- --template react"
